@@ -29,6 +29,15 @@
                    HorizontalOptions="Center"
                    Text="100 grams" />
         </VerticalStackLayout>
+        
+        <acrylic:AcrylicView 
+            Grid.Row="2" 
+            CornerRadius="20" 
+            EffectStyle="Custom"
+            VerticalOptions="Center"
+            TintColor="#FCE7A7"
+            TintOpacity=".2" />
+        
     </Grid>
     
 </ContentPage>
