@@ -1,45 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:acrylic="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView"
-             x:Class="FruitDemo.MainPage">
-    
+<ContentPage
+    x:Class="FruitDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:acrylic="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView">
+
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="0,1">
             <GradientStop Offset="0.1" Color="#FFCC33" />
             <GradientStop Offset="1.0" Color="#FCBC03" />
         </LinearGradientBrush>
     </ContentPage.Background>
-    
-    <Grid Margin="25" RowDefinitions=".2*, .4*, .4*">
-        <Image Grid.RowSpan="3"
-               HorizontalOptions="Center"
-               Source="{Binding papaya.png}"
-               VerticalOptions="Center" />
-        
+
+    <Grid Margin="25" RowDefinitions=".2*,.4*,.4*">
+        <Image
+            Aspect="Center"
+            Grid.RowSpan="3"
+            HorizontalOptions="Center"
+            Source="papaya.png"
+            VerticalOptions="Center" />
+
         <VerticalStackLayout>
-            <Label FontFamily="Regular"
-                   FontSize="45"
-                   HorizontalOptions="Center"
-                   Text="PAPAYA" />
-            <Label Margin="0,15,0,0"
-                   FontAttributes="Bold"
-                   FontFamily="Bold"
-                   FontSize="20"
-                   HorizontalOptions="Center"
-                   Text="100 grams" />
+            <Label
+                FontFamily="Regular"
+                FontSize="45"
+                HorizontalOptions="Center"
+                Text="PAPAYA" />
+            <Label
+                Margin="0,15,0,0"
+                FontAttributes="Bold"
+                FontFamily="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="100 grams" />
         </VerticalStackLayout>
-        
-        <acrylic:AcrylicView 
-            Grid.Row="2" 
-            CornerRadius="20" 
+
+
+        <acrylic:AcrylicView
+            Grid.Row="2"
+            CornerRadius="20"
             EffectStyle="Custom"
-            VerticalOptions="Center"
             TintColor="#FCE7A7"
-            TintOpacity=".2">
-            <VerticalStackLayout Padding="35"
-                                 VerticalOptions="Center"
-                                 BindableLayout.ItemsSource="{Binding PapayaInfo}">
+            TintOpacity=".2"
+            VerticalOptions="Center">
+
+            <VerticalStackLayout
+                Padding="35"
+                BindableLayout.ItemsSource="{Binding PapayaInfo}"
+                VerticalOptions="Center">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,10,0,0"
@@ -56,8 +64,10 @@
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </VerticalStackLayout>
+
         </acrylic:AcrylicView>
-        
+
     </Grid>
-    
+
+
 </ContentPage>
