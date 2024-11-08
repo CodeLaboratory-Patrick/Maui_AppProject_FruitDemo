@@ -52,6 +52,9 @@ The app provides a user-friendly interface to:
 - AcrylicView.Maui
 
 ---
+# Overview
+![Screenshot 2024-11-08 at 8 22 30 PM](https://github.com/user-attachments/assets/1e2d61a8-ba88-419a-abf8-240880a0918d)
+
 # ⭐️ Analysis of MainPage.xaml File
 
 ## Introduction
