@@ -2,6 +2,11 @@
 
 A simple mobile application built with .NET MAUI that demonstrates fruit data visualization and management.
 
+---
+## Overview
+![Screenshot 2024-11-08 at 8 22 30 PM](https://github.com/user-attachments/assets/1e2d61a8-ba88-419a-abf8-240880a0918d)
+
+---
 ## 📱 Features
 
 - Display a list of fruits with their details
@@ -9,6 +14,7 @@ A simple mobile application built with .NET MAUI that demonstrates fruit data vi
 - Responsive layout that works across different devices
 - Modern UI with MVVM architecture
 
+---
 ## 🛠 Technologies Used
 
 - .NET MAUI
@@ -16,15 +22,15 @@ A simple mobile application built with .NET MAUI that demonstrates fruit data vi
 - XAML
 - MVVM Pattern
 
+---
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 - Visual Studio 2022 (17.4 or later) with .NET MAUI workload
 - JetBrain Rider
 - .NET 8.0 SDK
 
-
+---
 ## 📂 Project Structure
 
 ```
@@ -40,7 +46,7 @@ FruitDemo/
 │         └── Roboto-Bold.ttf
 │         └── Roboto-Regular.ttf
 ```
-
+---
 ## 🎯 Usage
 
 The app provides a user-friendly interface to:
@@ -48,14 +54,12 @@ The app provides a user-friendly interface to:
 - See percentage-based statistics
 - Interact with a responsive UI
 
+---
 ## 📝 Nuget Package
 - AcrylicView.Maui
 
 ---
-# Overview
-![Screenshot 2024-11-08 at 8 22 30 PM](https://github.com/user-attachments/assets/1e2d61a8-ba88-419a-abf8-240880a0918d)
-
-# ⭐️ Analysis of MainPage.xaml File
+## ⭐️ Analysis of MainPage.xaml File
 
 ## Introduction
 
@@ -163,8 +167,9 @@ Here are some useful resources for understanding the concepts used in this layou
 2. [XAML Layouts in MAUI](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/) - Information on different layouts available in MAUI.
 3. [AcrylicView Effect in MAUI](https://github.com/sswi/AcrylicView.MAUI) - Documentation on the custom `AcrylicView` used for frosted glass effects.
 4. [Bindable Layouts in MAUI](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout?view=net-maui-8.0) - Useful for understanding how to bind dynamic collections to the UI.
+
 ---
-# ⭐️ Analysis of MainPage.xaml.cs File
+## ⭐️ Analysis of MainPage.xaml.cs File
 
 ## Introduction
 
@@ -250,7 +255,7 @@ While not directly included in the provided file, it is evident that `FruitInfor
 3. **Partial Class and XAML Code-Behind**: The use of `partial class` means the C# file is part of a complete class that includes both the XAML and the C# logic. The XAML handles the visual representation, while the C# code handles the logic and data management.
 
 ---
-# ⭐️ Analysis of FruitInformation.cs File
+## ⭐️ Analysis of FruitInformation.cs File
 
 ## Introduction
 The `FruitInformation.cs` file defines a simple model class called `FruitInformation` within the namespace `FruitDemo.Models`. In the context of the MVVM (Model-View-ViewModel) pattern, this model represents data related to a particular fruit's nutritional components, such as micronutrients and their respective percentages. This class is part of a .NET MAUI application, and it is primarily used to store and transfer data between different parts of the application.
